@@ -1,8 +1,8 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { View } from 'react-native';
 
 function App() {
-  return <Text> Teste </Text>;
+  return <View />;
 }
 
 export { App };
