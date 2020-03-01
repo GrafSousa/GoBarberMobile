@@ -6,21 +6,22 @@ import { PersistGate } from 'redux-persist/integration/react';
 
 import { createAppStore } from '~/redux';
 
-import './config/ReactotronConfig';
-import { Routes } from './routes';
+import { App } from './App';
 
-function App() {
+import './config/ReactotronConfig';
+
+function Index() {
   const { store, persistor } = createAppStore();
   return (
     <>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <StatusBar barStyle="light-content" backgroundColor="#7159c1" />
-          <Routes />
+          <App />
         </PersistGate>
       </Provider>
     </>
   );
 }
 
-export { App };
+export { Index };
