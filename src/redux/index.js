@@ -8,9 +8,11 @@ import createStore from './createStore';
 import { rootSaga } from '~/sagas';
 
 import { authReducer } from './auth/reducer';
+import { crudUserReducer } from './user/index';
 
 const reducers = combineReducers({
   authReducer,
+  crudUserReducer,
 });
 
 const persistConfig = {

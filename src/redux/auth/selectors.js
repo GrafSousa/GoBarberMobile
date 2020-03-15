@@ -11,3 +11,8 @@ export const AuthIsLoadingSelector = createSelector(
   AuthStateSelector,
   authReducer => authReducer.isLoading
 );
+
+export const AuthUserSelector = createSelector(
+  AuthStateSelector,
+  authReducer => authReducer.user
+);
