@@ -56,8 +56,6 @@ export function* signUp({ payload }) {
   }
 }
 
-export function signOut() {}
-
 export function setToken({ payload }) {
   if (!payload) return;
 
