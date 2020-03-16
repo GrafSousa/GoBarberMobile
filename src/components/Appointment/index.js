@@ -17,7 +17,7 @@ function Appointment({ data, onCancel }) {
     <Container past={data.past}>
       <Left>
         <Avatar
-          sourte={{
+          source={{
             uri: data.provider.avatar
               ? data.provider.avatar.url
               : `https://api.adorable.io/avatar/50/${data.provider.name}.png`,
