@@ -58,6 +58,7 @@ const createRouter = (signedIn = false) =>
             Profile,
           },
           {
+            resetOnBlur: true,
             tabBarOptions: {
               activeTintColor: '#FFF',
               keyboardHidesTabBar: true,
